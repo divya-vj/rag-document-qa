@@ -200,11 +200,11 @@ if "vector_store" in st.session_state:
             try:
                 from retriever import build_rag_chain, ask_question
 
-                chain  = build_rag_chain(
-                    st.session_state["vector_store"],
-                    llm_choice=llm_key
+                chain_tuple = build_rag_chain(
+                     st.session_state["vector_store"],
+                     llm_choice=llm_key
                 )
-                result = ask_question(chain, question)
+                result = ask_question(chain_tuple, question)
 
                 # Store result in session state
                 st.session_state["last_result"]   = result

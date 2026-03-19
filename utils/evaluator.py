@@ -68,12 +68,12 @@ if __name__ == "__main__":
     vs, _ = load_vector_store()
 
     print("Building RAG chain...")
-    chain = build_rag_chain(vs, llm_choice="groq")
+    chain_tuple = build_rag_chain(vs, llm_choice="groq")
 
     question = "What is multi-head attention and how does it work?"
     print(f"\nQuestion: {question}")
 
-    result = ask_question(chain, question)
+    result = ask_question(chain_tuple, question)
     print(f"\nAnswer: {result['answer'][:200]}...")
 
     print("\nEvaluating answer faithfulness...")
