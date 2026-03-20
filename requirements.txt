@@ -11,3 +11,4 @@ altair==5.3.0
 ragas==0.2.15
 datasets==3.5.0
 langchain-huggingface
+langchain-chroma
