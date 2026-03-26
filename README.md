@@ -133,7 +133,7 @@ Get free API keys at:
 
 ---
 
-## 👤 Contact
+## Contact
 
 **Divya VJ**
 - LinkedIn: linkedin.com/in/divyavj123
